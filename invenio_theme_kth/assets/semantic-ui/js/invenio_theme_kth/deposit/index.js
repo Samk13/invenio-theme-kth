@@ -8,7 +8,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { getInputFromDOM } from "react-invenio-deposit";
-import { RDMDepositForm } from "./RDMDepositFormOverride";
+import { RDMDepositForm } from "./RDMDepositFormOverride.js";
 
 ReactDOM.render(
   <RDMDepositForm

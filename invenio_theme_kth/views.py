@@ -11,10 +11,10 @@ from invenio_rdm_records.proxies import current_rdm_records_service as rec_servi
 @login_required
 def guarded_deposit_create(*args, **kwargs):
     """Guard the creation page for records, based on permissions."""
-    if not rec_service.check_permission(g.identity, "create"):
-        return render_template(
-            "./semantic-ui/invenio_theme_kth/records/deposit.html", user=current_user
-        )
+    # if rec_service.check_permission(g.identity, "create"):
+    # return render_template(
+    #     "./semantic-ui/invenio_theme_kth/records/deposit.html", user=current_user
+    # )
 
     return deposit_create(*args, **kwargs)
 
@@ -24,13 +24,13 @@ def guarded_deposit_edit(*args, **kwargs):
     """Guard the edit page for records, based on permissions."""
     # NOTE: this extra loading of the draft introduces an extra DB query, but i think
     #       it should not make too much of a difference for us
-    draft = rec_service.draft_cls.pid.resolve(
-        kwargs["pid_value"], registered_only=False
-    )
-    if not rec_service.check_permission(g.identity, "update_draft", record=draft):
-        return render_template(
-            "./semantic-ui/invenio_theme_kth/records/deposit.html", user=current_user
-        )
+    # draft = rec_service.draft_cls.pid.resolve(
+    #     kwargs["pid_value"], registered_only=False
+    # )
+    # if rec_service.check_permission(g.identity, "update_draft", record=draft):
+    # return render_template(
+    #     "./semantic-ui/invenio_theme_kth/records/deposit.html", user=current_user
+    # )
 
     return deposit_edit(*args, **kwargs)
 

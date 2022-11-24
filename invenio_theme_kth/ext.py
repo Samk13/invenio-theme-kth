@@ -1,3 +1,4 @@
+"""Invenio-Theme-KTH extension."""
 from . import config
 from .views import create_blueprint
 
@@ -9,6 +10,7 @@ class InvenioThemeKTH:
         """Extension initialization."""
         if app:
             self.init_app(app)
+            self.blueprint = create_blueprint(app)
 
     def init_app(self, app):
         """Flask application initialization."""
@@ -18,8 +20,7 @@ class InvenioThemeKTH:
 
     def init_blueprint(self, app):
         """Initialize blueprint."""
-        self.blueprint = blueprint = create_blueprint(app)
-        app.register_blueprint(blueprint)
+        app.register_blueprint(self.blueprint)
         # since invenio-app-rdm currently (october 2022) doesn't offer an easy way of
         # overriding the provided jinja templates, we have to perform a workaround:
         # the first blueprint that has a definition for a template (per name) gets
@@ -40,7 +41,7 @@ class InvenioThemeKTH:
                 if name != "invenio_theme_kth"
             }
 
-            app.blueprints = {"invenio_theme_kth": blueprint, **bps}
+            app.blueprints = {"invenio_theme_kth": self.blueprint, **bps}
 
     def init_config(self, app):
         """Initialize configuration."""
