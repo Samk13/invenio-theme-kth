@@ -106,11 +106,6 @@ export class RDMDepositForm extends Component {
           fieldPath="message"
           labels={this.config.custom_fields.error_labels}
         />
-        <CommunityHeader imagePlaceholderLink="/static/images/square-placeholder.png" />
-        <h1>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</h1>
-        <h1>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</h1>
-        <h1>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</h1>
-        <h1>%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%</h1>
         <Container id="rdm-deposit-form" className="rel-mt-1">
           <Grid className="mt-25">
             <Grid.Column mobile={16} tablet={16} computer={11}>
@@ -119,6 +114,7 @@ export class RDMDepositForm extends Component {
                 active
                 label={i18next.t("Files")}
               >
+                <CommunityHeader imagePlaceholderLink="/static/images/square-placeholder.png" />
                 {this.noFiles && record.is_published && (
                   <div className="text-align-center pb-10">
                     <em>{i18next.t("The record has no files.")}</em>
@@ -143,7 +139,7 @@ export class RDMDepositForm extends Component {
                   "metadata.rights",
                 ]}
                 active
-                label={i18next.t("Basic information XXXXXXXXXXXXX")}
+                label={i18next.t("Basic information")}
               >
                 {this.config.pids.map((pid) => (
                   <Fragment key={pid.scheme}>
