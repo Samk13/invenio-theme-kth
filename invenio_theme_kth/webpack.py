@@ -12,7 +12,6 @@ theme = WebpackThemeBundle(
                 "invenio-app-rdm-deposit-override": "./js/invenio_theme_kth/deposit/index.js",
             },
             aliases={
-                "@less/invenio_theme_kth": "less/invenio_theme_kth",
                 "@js/invenio_theme_kth": "js/invenio_theme_kth",
             },
         ),
