@@ -37,8 +37,8 @@ import {
   VersionField,
   FundingField,
 } from "react-invenio-deposit";
-import { AccordionField, CustomFields } from "react-invenio-forms";
-import { Card, Container, Grid, Ref, Sticky } from "semantic-ui-react";
+import { AccordionField, CustomFields, FieldLabel } from "react-invenio-forms";
+import { Card, Container, Grid, Ref, Sticky, Form, Divider } from "semantic-ui-react";
 import PropTypes from "prop-types";
 
 export class RDMDepositForm extends Component {
@@ -110,11 +110,32 @@ export class RDMDepositForm extends Component {
           <Grid className="mt-25">
             <Grid.Column mobile={16} tablet={16} computer={11}>
               <AccordionField
+                active
+                label={i18next.t("Community")}
+              >
+                <Grid>
+                  <Grid.Row>
+                    <Grid.Column>
+                        <Form.Field required>
+                          <Card.Content>
+                            <Card.Header>
+                              <FieldLabel className="ui grid visible info message header " htmlFor="communityHeader" label="Community is required in order to submit your data." />
+                            </Card.Header>
+                          </Card.Content>
+                        </Form.Field>
+                        <Divider horizontal />
+                      <Container className="ui grid page-subheader">
+                            <CommunityHeader id="communityHeader" imagePlaceholderLink="/static/images/square-placeholder.png" />
+                      </Container>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
+              </AccordionField>
+              <AccordionField
                 includesPaths={["files.enabled"]}
                 active
                 label={i18next.t("Files")}
               >
-                <CommunityHeader imagePlaceholderLink="/static/images/square-placeholder.png" />
                 {this.noFiles && record.is_published && (
                   <div className="text-align-center pb-10">
                     <em>{i18next.t("The record has no files.")}</em>
