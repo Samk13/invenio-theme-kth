@@ -4,9 +4,5 @@
 #
 # invenio-config-kth is free software, you can redistribute it and/or
 # modify it under the terms of the MIT License; see LICENSE file details.
-"""Invenio-theme-kth."""
 
-from .ext import InvenioThemeKTH
-
-__version__ = "1.0.0"
-__all__ = ("__version__", "InvenioThemeKTH")
+"""Tests module."""
