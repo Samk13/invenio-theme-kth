@@ -1,25 +1,18 @@
 """Additional views."""
-
-# from flask import Blueprint
-
 from flask import Blueprint
 from flask_login import login_required
 from invenio_app_rdm.records_ui.views.deposits import deposit_create, deposit_edit
 
 
-# Registration
-
 @login_required
 def guarded_deposit_create(*args, **kwargs):
     """Guard the creation page for records, based on permissions."""
-
     return deposit_create(*args, **kwargs)
 
 
 @login_required
 def guarded_deposit_edit(*args, **kwargs):
     """Guard the edit page for records, based on permissions."""
-
     return deposit_edit(*args, **kwargs)
 
 

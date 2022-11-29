@@ -11,7 +11,7 @@ set -o errexit
 # Quit on unbound symbols
 set -o nounset
 
-# python -m check_manifest --no-build-isolation
+python -m check_manifest --no-build-isolation
 python -m pytest $@
 tests_exit_code=$?
 exit "$tests_exit_code"

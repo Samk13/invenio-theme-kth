@@ -1,0 +1,6 @@
+include *.md
+include *.sh
+include Makefile
+recursive-include invenio_theme_kth *.config
+recursive-include invenio_theme_kth *.html
+recursive-include invenio_theme_kth *.js
