@@ -9,7 +9,6 @@ invenio-cli assets watch
 ```
 
 weird error
-
 ```console
 [2022-11-29 17:26:49,368] WARNING in views: Pages were not loaded.
 127.0.0.1 - - [29/Nov/2022 17:26:49] "GET / HTTP/1.1" 500 -
