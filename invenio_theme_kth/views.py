@@ -22,6 +22,7 @@ def create_blueprint(app):
         "invenio_theme_kth",
         __name__,
         template_folder="./templates",
+        static_folder='static',
     )
     #
     # Views
