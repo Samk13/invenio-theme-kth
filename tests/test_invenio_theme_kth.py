@@ -11,6 +11,8 @@ from invenio_theme_kth import InvenioThemeKTH, __version__
 
 def test_version():
     """Test version import."""
+    from invenio_theme_kth import __version__
+
     assert __version__
 
 
