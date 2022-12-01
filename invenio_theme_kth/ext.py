@@ -22,3 +22,9 @@ class InvenioThemeKTH:
         # Use theme's base template if theme is installed
         for k in dir(config):
             app.config.setdefault(k, getattr(config, k))
+            app.config.update(
+                {
+                    "DEPOSIT_CREATE_TEMPLATE": "invenio_app_rdm/records/deposit.html",
+                    "DEPOSIT_EDIT_TEMPLATE": "invenio_app_rdm/records/deposit.html",
+                }
+            )
