@@ -1,10 +1,7 @@
 """Additional views."""
 from flask import Blueprint
+from invenio_app_rdm.records_ui.views.deposits import deposit_create, deposit_edit
 
-from invenio_app_rdm.records_ui.views.deposits import (
-    deposit_create,
-    deposit_edit,
-)
 
 def create_blueprint(app):
     """Register blueprint routes on app."""
