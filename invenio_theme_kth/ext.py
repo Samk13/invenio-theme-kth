@@ -1,6 +1,5 @@
 """Invenio-Theme-KTH extension."""
 from . import config
-from .views import create_blueprint
 
 
 class InvenioThemeKTH:
@@ -10,7 +9,6 @@ class InvenioThemeKTH:
         """Extension initialization."""
         if app:
             self.init_app(app)
-            self.blueprint = create_blueprint(app)
 
     def init_app(self, app):
         """Flask application initialization."""
@@ -22,9 +20,3 @@ class InvenioThemeKTH:
         # Use theme's base template if theme is installed
         for k in dir(config):
             app.config.setdefault(k, getattr(config, k))
-            app.config.update(
-                {
-                    "DEPOSIT_CREATE_TEMPLATE": "invenio_app_rdm/records/deposit.html",
-                    "DEPOSIT_EDIT_TEMPLATE": "invenio_app_rdm/records/deposit.html",
-                }
-            )

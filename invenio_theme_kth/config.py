@@ -1,4 +1,4 @@
-# Invenio-Theme
+"""Invenio-Theme config."""
 # =============
 # See https://invenio-theme.readthedocs.io/en/latest/configuration.html
 
@@ -6,8 +6,6 @@
 APP_THEME = ["semantic-ui"]
 """The application theme to use."""
 
-DEPOSIT_CREATE_TEMPLATE = "invenio_app_rdm/records/deposit.html"
-"""Create deposit page template."""
 
-DEPOSIT_EDIT_TEMPLATE = "invenio_app_rdm/records/deposit.html"
+APP_RDM_DEPOSIT_FORM_TEMPLATE = "invenio_app_rdm/records/deposit_override.html"
 """Edit deposit page template."""
