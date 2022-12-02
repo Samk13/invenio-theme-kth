@@ -8,4 +8,4 @@ APP_THEME = ["semantic-ui"]
 
 
 APP_RDM_DEPOSIT_FORM_TEMPLATE = "invenio_app_rdm/records/deposit_override.html"
-"""Edit deposit page template."""
+"""Deposit form page template override."""

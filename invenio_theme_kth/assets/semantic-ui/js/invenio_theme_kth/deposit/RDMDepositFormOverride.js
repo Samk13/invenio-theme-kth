@@ -116,7 +116,7 @@ export class RDMDepositForm extends Component {
                 <Grid>
                   <Grid.Row>
                     <Grid.Column>
-                        <Form.Field required>
+                        <Form.Field required id="communityRequiredMessage">
                           <Card.Content>
                             <Card.Header>
                               <FieldLabel className="ui grid visible info message header " htmlFor="communityHeader" label="Community is required in order to submit your data." />
