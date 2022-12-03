@@ -1,0 +1,33 @@
+# Swedish translations for invenio-theme-kth.
+# Copyright (C) 2022 KTH Royal Institute of Technology
+# This file is distributed under the same license as the invenio-theme-kth
+# project.
+# Sam Arbid <samaa2@kth.se>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: invenio-theme-kth 1.0.0\n"
+"Report-Msgid-Bugs-To: info@kth.se\n"
+"POT-Creation-Date: 2022-12-03 02:40+0100\n"
+"PO-Revision-Date: 2022-12-03 02:41+0100\n"
+"Last-Translator: Sam Arbid <samaa2@kth.se>\n"
+"Language: sv\n"
+"Language-Team: sv <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: invenio_theme_kth/templates/semantic-ui/invenio_app_rdm/records/deposit_override.html:10
+msgid "New version"
+msgstr "Ny version"
+
+#: invenio_theme_kth/templates/semantic-ui/invenio_app_rdm/records/deposit_override.html:12
+msgid "New upload"
+msgstr "Ny uppladdning"
+
+#: invenio_theme_kth/templates/semantic-ui/invenio_app_rdm/records/deposit_override.html:14
+msgid "Edit upload"
+msgstr "Redigera uppladdning"
+

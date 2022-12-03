@@ -7,7 +7,6 @@
 
 """Invenio-Theme-KTH extension."""
 from . import config
-from .views import create_blueprint
 
 
 class InvenioThemeKTH:
@@ -17,7 +16,6 @@ class InvenioThemeKTH:
         """Extension initialization."""
         if app:
             self.init_app(app)
-            self.blueprint = create_blueprint(app)
 
     def init_app(self, app):
         """Flask application initialization."""

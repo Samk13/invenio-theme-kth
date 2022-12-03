@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: i18next-conv\n"
+"mime-version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"POT-Creation-Date: 2022-12-03T02:00:33.928Z\n"
+"PO-Revision-Date: 2022-12-03T02:00:33.928Z\n"
+"Language: en\n"
+
+msgid "Community"
+msgstr "Community"
+
+msgid "Files"
+msgstr "Files"
+
+msgid "The record has no files."
+msgstr "The record has no files."
+
+msgid "Basic information"
+msgstr "Basic information"
+
+msgid "Creators"
+msgstr "Creators"
+
+msgid "Recommended information"
+msgstr "Recommended information"
+
+msgid "Add contributor"
+msgstr "Add contributor"
+
+msgid "Contributors"
+msgstr "Contributors"
+
+msgid "Alternate identifiers"
+msgstr "Alternate identifiers"
+
+msgid "Related works"
+msgstr "Related works"
+
+msgid "Visibility"
+msgstr "Visibility"
