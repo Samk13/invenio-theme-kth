@@ -1,4 +1,4 @@
-"""Custom Registration form"""
+"""Custom Registration form."""
 # -*- coding: utf-8 -*-
 #
 # Copyright (C) 2022 KTH Royal Institute of Technology Sweden
