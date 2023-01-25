@@ -9,3 +9,4 @@ Changes
 =======
 
 Version 1.0.0 (released 2022-12-01)
+Version 1.1.0 Add terms of use checkbox for Registration form

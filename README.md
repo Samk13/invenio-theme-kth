@@ -1,5 +1,8 @@
 # invenio-theme-kth
-This module provides templates overrides and modification to invenio default theme
+This module provides templates overrides and modification to invenio default theme:
+- Customization of templates and modifications to the Invenio default theme are provided by this module
+- Addeding a check box to the registration process when using third-party authentication services such as ORCID to ensure agreement with the terms of use before registration.
+
 ## Installation
 ```bash
 pip install invenio-theme-kth
@@ -32,6 +35,6 @@ invenio-cli assets build
 ```
 
 ## Upload to pypi
-make package # this will zip the package into dist dir
+make package-create # this will zip the package into dist dir
 make package-check # verify if the package pass twine checks
 twine upload -u <USERNAME> -p <PASSWORD> --repository-url https://test.pypi.org/legacy/ dist/* --verbose
