@@ -37,4 +37,4 @@ invenio-cli assets build
 ## Upload to pypi
 make package-create # this will zip the package into dist dir
 make package-check # verify if the package pass twine checks
-twine upload -u <USERNAME> -p <PASSWORD> --repository-url https://test.pypi.org/legacy/ dist/* --verbose
+twine upload -u <USERNAME> -p <PASSWORD> dist/* --verbose
