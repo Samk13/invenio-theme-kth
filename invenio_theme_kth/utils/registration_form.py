@@ -27,7 +27,7 @@ def kth_registration_form(*args, **kwargs):
     # <a class='pull-right' href='{terms_of_use_url}' target='_blank'>terms and conditions</a>\
     # of KTH Royal Institute of Technology."
 
-    terms_of_use_text = current_app.config["TERMS_OF_USE_TEXT"]
+    terms_of_use_text = Markup(current_app.config["TERMS_OF_USE_TEXT"])
     current_remote_app = kwargs.get("oauth_remote_app")
     if not current_remote_app:
         # return default just in case something is wrong
@@ -45,7 +45,7 @@ def kth_registration_form(*args, **kwargs):
             recaptcha = None  # remove the captcha
             submit = None  # remove submit btn, already defined in the template
             terms_of_use = BooleanField(
-                label=Markup(terms_of_use_text), validators=[validators.required()]
+                terms_of_use_text, [validators.required()]
             )  # add the new field
 
         return DefaultRegistrationForm(*args, **kwargs)
@@ -60,7 +60,7 @@ def kth_registration_form(*args, **kwargs):
             recaptcha = None  # remove the captcha
             submit = None  # remove submit btn, already defined in the template
             terms_of_use = BooleanField(
-                label=Markup(terms_of_use_text), validators=[validators.required()]
+                terms_of_use_text, [validators.required()]
             )  # add the new field
 
         return OrcidRegistrationForm(*args, **kwargs)
