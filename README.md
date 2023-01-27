@@ -35,6 +35,28 @@ invenio-cli assets build
 ```
 
 ## Upload to pypi
-make package-create # this will zip the package into dist dir
-make package-check # verify if the package pass twine checks
+
+```console
+make package-create
+make package-upload USER="" PASS=""
+```
+
+- make package-create # it Will:
+1. remove old dist folder
+2. auto increment package version
+3. zip the package into dist dir
+4. check if the package pass twin checks
+
+> you can change version increment to major or minor by adding args:
+> -ma -> major increment `make package-create ARG="-ma"`
+
+> -mi -> minor increment `make package-create ARG="-mi"`
+
+> -pa -> patch increment you can leave it blank as default `make package-create`
+
+- make package-check # verify if the package pass twine checks
+
+- make package-upload USER="" PASS="" # will  and upload to pypi will prompt for username and pass
+
+or manually:
 twine upload -u <USERNAME> -p <PASSWORD> dist/* --verbose
