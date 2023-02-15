@@ -1,4 +1,3 @@
-
 // This file is part of React-Invenio-Deposit
 // Copyright (C) 2021 Graz University of Technology.
 //

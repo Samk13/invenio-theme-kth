@@ -5,8 +5,8 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"POT-Creation-Date: 2022-12-03T02:00:33.928Z\n"
-"PO-Revision-Date: 2022-12-03T02:00:33.928Z\n"
+"POT-Creation-Date: 2023-02-15T22:01:21.256Z\n"
+"PO-Revision-Date: 2023-02-15T22:01:21.256Z\n"
 "Language: en\n"
 
 msgid "Community"
@@ -41,3 +41,6 @@ msgstr "Related works"
 
 msgid "Visibility"
 msgstr "Visibility"
+
+msgid "Community is required in order to submit your data."
+msgstr "Community is required in order to submit your data."
