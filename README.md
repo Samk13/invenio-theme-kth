@@ -15,8 +15,23 @@ pip install invenio-theme-kth
 
 `config.py`: overrides several configuration items related to theming Invenio If new files is been added, first run:
 
-## Development
-This section intended if you want to further develop this module.
+## Maintainers
+This section intended for you who want to further develop this module.
+
+### Last Updated
+> invenio RDM V11
+
+### Maintaining
+Keep the following files up to date with source:
+
+[RDMDepositFormOverride.js](invenio_theme_kth/assets/semantic-ui/js/invenio_theme_kth/deposit/RDMDepositFormOverride.js) with
+[Source RDMDepositForm.js](https://github.com/inveniosoftware/invenio-app-rdm/blob/master/invenio_app_rdm/theme/assets/semantic-ui/js/invenio_app_rdm/deposit/RDMDepositForm.js)
+
+[index.js](invenio_theme_kth/assets/semantic-ui/js/invenio_theme_kth/deposit/index.js) with [Source index.js](https://github.com/inveniosoftware/invenio-app-rdm/blob/master/invenio_app_rdm/theme/assets/semantic-ui/js/invenio_app_rdm/deposit/index.js)
+
+Update translations:
+[Follow the steps here](.tx/config)
+
 ## Local setup
 ```bash
 make install
