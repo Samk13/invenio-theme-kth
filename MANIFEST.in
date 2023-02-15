@@ -4,6 +4,8 @@ include *.pot
 include Makefile
 include babel.ini
 include .tx/config
+include *.yml
+include .prettierrc
 recursive-include invenio_theme_kth *.config
 recursive-include invenio_theme_kth *.html *.js *.less *.json *.yaml
 recursive-include invenio_theme_kth *.js
