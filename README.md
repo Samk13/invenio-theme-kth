@@ -58,22 +58,23 @@ make package-create
 make package-upload USER="" PASS=""
 ```
 
-- make package-create # it Will:
+- `make package-create` command will:
 1. remove old dist folder
 2. auto increment package version
 3. zip the package into dist dir
 4. check if the package pass twin checks
 
-> you can change version increment to major or minor by adding args:
-> -ma -> major increment `make package-create ARG="-ma"`
+> You can change version increment to major or minor by adding ARG:
 
-> -mi -> minor increment `make package-create ARG="-mi"`
+- `make package-create ARG="-ma"` increment major version
 
-> -pa -> patch increment you can leave it blank as default `make package-create`
+- `make package-create ARG="-mi"` increment minor version
 
-- make package-check # verify if the package pass twine checks
+- `make package-create` increment patch version
 
-- make package-upload USER="" PASS="" # will  and upload to pypi will prompt for username and pass
+- `make package-check` # verify if the package pass twine checks
+
+- `make package-upload USER="" PASS=""` # will  and upload to pypi will prompt for username and pass
 
 or manually:
 twine upload -u <USERNAME> -p <PASSWORD> dist/* --verbose
