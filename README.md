@@ -1,3 +1,5 @@
+![GitHub](https://img.shields.io/github/license/front-matter/talbot?logo=MIT)
+
 # invenio-theme-kth
 This module provides templates overrides and modification to invenio default theme:
 - Customization of templates and modifications to the Invenio default theme are provided by this module
