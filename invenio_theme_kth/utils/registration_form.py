@@ -39,7 +39,7 @@ def kth_registration_form(*args, **kwargs):
         class DefaultRegistrationForm(_security.confirm_register_form):
             """DefaultRegistrationForm."""
 
-            email = None  # remove the email field
+            # email = None  # remove the email field
             password = None  # remove the password field
             profile = FormField(ProfileForm, separator=".")
             recaptcha = None  # remove the captcha
