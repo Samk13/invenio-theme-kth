@@ -8,5 +8,5 @@
 
 from .ext import InvenioThemeKTH
 
-__version__ = "1.2.5"
+__version__ = "1.2.6"
 __all__ = ("__version__", "InvenioThemeKTH")
